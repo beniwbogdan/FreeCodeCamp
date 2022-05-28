@@ -205,3 +205,25 @@ const removedFromMyArray  = myArray.shift();
 // After the shift, ourArray would have the value ["J", "cat"]. After the unshift, ourArray would have the value ["Happy", "J", "cat"].
 
 // Add ["Paul", 35] to the beginning of the myArray variable using unshift().
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+myArray.shift();
+myArray.unshift(["Paul", 35]);
+
+// Only change code below this line
+
+
+// Shopping List
+// Create a shopping list in the variable myList. The list should be a multi-dimensional array containing several sub-arrays.
+
+// The first element in each sub-array should contain a string with the name of the item. The second element should be a number representing the quantity i.e.
+
+// ["Chocolate Bar", 15]
+// There should be at least 5 sub-arrays in the list.
+
+const myList = [["Chocolate Bar", 15],
+["Chocolate Bar", 15],
+["Chocolate Bar", 15],
+["Chocolate Bar", 15],
+["Chocolate Bar", 15]];
