@@ -16,7 +16,7 @@
 const lastName = "Lovelace";
 
 // Only change code below this line
-const secondToLastLetterOfLastName = lastName[lastName.length-2]; // Change this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
 
 
 // Word Blanks
@@ -41,7 +41,7 @@ const myVerb = "ran";
 const myAdverb = "quickly";
 
 // Only change code below this line
-const wordBlanks =myAdjective+" "+myNoun+" "+myVerb+" "+myAdverb ; // Change this line
+const wordBlanks = myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb; // Change this line
 // Only change code above this line
 
 // Store Multiple Values in one Variable using JavaScript Arrays
@@ -53,7 +53,7 @@ const wordBlanks =myAdjective+" "+myNoun+" "+myVerb+" "+myAdverb ; // Change thi
 // Modify the new array myArray so that it contains both a string and a number (in that order).
 
 // Only change code below this line
-const myArray = ["string",4];
+const myArray = ["string", 4];
 
 
 
@@ -65,7 +65,10 @@ const myArray = ["string",4];
 
 // Create a nested array called myArray.
 // Only change code below this line
-const myArray = [[],[]];
+const myArray = [
+    [],
+    []
+];
 
 // Access Array Data with Indexes
 // We can access the data inside arrays using indexes.
@@ -102,7 +105,7 @@ const myData = myArray[0];
 
 // Setup
 const myArray = [18, 64, 99];
-myArray[0]=45;
+myArray[0] = 45;
 // Only change code below this line
 
 // Access Multi-Dimensional Arrays With Indexes
@@ -130,10 +133,12 @@ const myArray = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
-    [[10, 11, 12], 13, 14],
-  ];
-  
-  const myData = myArray[2][1];
+    [
+        [10, 11, 12], 13, 14
+    ],
+];
+
+const myData = myArray[2][1];
 
 //   Manipulate Arrays With push()
 // An easy way to append data to the end of an array is via the push() function.
@@ -152,7 +157,10 @@ const myArray = [
 // Push ["dog", 3] onto the end of the myArray variable.
 
 // Setup
-const myArray = [["John", 23], ["cat", 2]];
+const myArray = [
+    ["John", 23],
+    ["cat", 2]
+];
 myArray.push(["dog", 3]);
 
 // Manipulate Arrays With pop()
@@ -171,8 +179,11 @@ myArray.push(["dog", 3]);
 // Use the .pop() function to remove the last item from myArray and assign the popped off value to a new variable, removedFromMyArray.
 
 // Setup
-const myArray = [["John", 23], ["cat", 2]];
-const removedFromMyArray=myArray.pop(["cat", 2]);
+const myArray = [
+    ["John", 23],
+    ["cat", 2]
+];
+const removedFromMyArray = myArray.pop(["cat", 2]);
 
 // Manipulate Arrays With shift()
 // pop() always removes the last element of an array. What if you want to remove the first?
@@ -188,8 +199,11 @@ const removedFromMyArray=myArray.pop(["cat", 2]);
 // Use the .shift() function to remove the first item from myArray and assign the "shifted off" value to a new variable, removedFromMyArray.
 
 // Setup
-const myArray = [["John", 23], ["dog", 3]];
-const removedFromMyArray  = myArray.shift();
+const myArray = [
+    ["John", 23],
+    ["dog", 3]
+];
+const removedFromMyArray = myArray.shift();
 // Only change code below this line
 
 // Manipulate Arrays With unshift()
@@ -207,7 +221,10 @@ const removedFromMyArray  = myArray.shift();
 // Add ["Paul", 35] to the beginning of the myArray variable using unshift().
 
 // Setup
-const myArray = [["John", 23], ["dog", 3]];
+const myArray = [
+    ["John", 23],
+    ["dog", 3]
+];
 myArray.shift();
 myArray.unshift(["Paul", 35]);
 
@@ -222,11 +239,13 @@ myArray.unshift(["Paul", 35]);
 // ["Chocolate Bar", 15]
 // There should be at least 5 sub-arrays in the list.
 
-const myList = [["Chocolate Bar", 15],
-["Chocolate Bar", 15],
-["Chocolate Bar", 15],
-["Chocolate Bar", 15],
-["Chocolate Bar", 15]];
+const myList = [
+    ["Chocolate Bar", 15],
+    ["Chocolate Bar", 15],
+    ["Chocolate Bar", 15],
+    ["Chocolate Bar", 15],
+    ["Chocolate Bar", 15]
+];
 
 Write Reusable JavaScript with Functions
 In JavaScript, we can divide up our code into reusable parts called functions.
@@ -241,10 +260,10 @@ In JavaScript, we can divide up our code into reusable parts called functions.
 // Create a function called reusableFunction which prints the string Hi World to the dev console.
 // Call the function.
 
-let reusableFunction =()=>{
+let reusableFunction = () => {
     console.log("Hi World");
-  }
-  reusableFunction();
+}
+reusableFunction();
 
 //   Passing Values to Functions with Arguments
 // Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.
@@ -259,11 +278,11 @@ let reusableFunction =()=>{
 // Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console.
 // Call the function with two numbers as arguments.
 
-let functionWithArgs =(arg1,arg2)=>{
-    console.log(arg1+arg2) ;
-  }
-  
-  functionWithArgs(1,2);
+let functionWithArgs = (arg1, arg2) => {
+    console.log(arg1 + arg2);
+}
+
+functionWithArgs(1, 2);
 
 //   Return a Value from a Function with Return
 // We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.
@@ -280,10 +299,10 @@ let functionWithArgs =(arg1,arg2)=>{
 // plusThree takes an argument for num and returns a value equal to num + 3.
 
 // Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
-let timesFive =(n)=>{
-    return n*5;
-  }
-  timesFive(1);
+let timesFive = (n) => {
+    return n * 5;
+}
+timesFive(1);
 
 //   Global Scope and Functions
 // In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
@@ -295,24 +314,25 @@ let timesFive =(n)=>{
 // Inside function fun1, assign 5 to oopsGlobal without using the let or const keywords.
 
 // Declare the myGlobal variable below this line
-let myGlobal =10;
+let myGlobal = 10;
 var oopsGlobal;
+
 function fun1() {
-  // Assign 5 to oopsGlobal Here
-oopsGlobal=5;
+    // Assign 5 to oopsGlobal Here
+    oopsGlobal = 5;
 }
 
 // Only change code above this line
 
 function fun2() {
-  var output = "";
-  if (typeof myGlobal != "undefined") {
-    output += "myGlobal: " + myGlobal;
-  }
-  if (typeof oopsGlobal != "undefined") {
-    output += " oopsGlobal: " + oopsGlobal;
-  }
-  console.log(output);
+    var output = "";
+    if (typeof myGlobal != "undefined") {
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+        output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
 }
 
 // Local Scope and Functions
@@ -334,14 +354,14 @@ function fun2() {
 // Note: The console will still display ReferenceError: myVar is not defined, but this will not cause the tests to fail.
 function myLocalScope() {
     // Only change code below this line
-  let myVar=4 ;
+    let myVar = 4;
     console.log('inside myLocalScope', myVar);
-  }
-  myLocalScope();
-  
-  // Run and check the console
-  // myVar is not defined outside of myLocalScope
-  console.log('outside myLocalScope', myVar);
+}
+myLocalScope();
+
+// Run and check the console
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
 
 //   Global vs. Local Scope in Functions
 // It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
@@ -361,10 +381,10 @@ function myLocalScope() {
 const outerWear = "T-Shirt";
 
 function myOutfit() {
-  // Only change code below this line
-const outerWear="sweater";
-  // Only change code above this line
-  return outerWear;
+    // Only change code below this line
+    const outerWear = "sweater";
+    // Only change code above this line
+    return outerWear;
 }
 
 myOutfit();
@@ -389,14 +409,14 @@ myOutfit();
 let sum = 0;
 
 function addThree() {
-  sum = sum + 3;
+    sum = sum + 3;
 }
 
 // Only change code below this line
-let addFive=()=>{
-sum+=5;
+let addFive = () => {
+    sum += 5;
 
-} 
+}
 
 // Only change code above this line
 
@@ -418,7 +438,7 @@ addFive();
 let processed = 0;
 
 function processArg(num) {
-  return (num + 3) / 5;
+    return (num + 3) / 5;
 }
 
 // Only change code below this line
@@ -436,23 +456,23 @@ processed = processArg(7);
 
 function nextInLine(arr, item) {
     // Only change code below this line
-     var queue = arr.push(item);
-  
+    var queue = arr.push(item);
+
     var removeItem = arr.shift();
-    
+
     return removeItem;
     // Only change code above this line
-  }
-  
-  
-  
-  // Setup
-  const testArr = [1, 2, 3, 4, 5];
-  
-  // Display code
-  console.log("Before: " + JSON.stringify(testArr));
-  console.log(nextInLine(testArr, 6));
-  console.log("After: " + JSON.stringify(testArr));
+}
+
+
+
+// Setup
+const testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
 
 //   Understanding Boolean Values
 // Another data type is the Boolean. Booleans may only be one of two values: true or false. They are basically little on-off switches, where true is on and false is off. These two states are mutually exclusive.
@@ -463,11 +483,11 @@ function nextInLine(arr, item) {
 
 function welcomeToBooleans() {
     // Only change code below this line
-  
+
     return !false; // Change this line
-  
+
     // Only change code above this line
-  }
+}
 
 //   Use Conditional Logic with If Statements
 // if statements are used to make decisions in code. The keyword if tells JavaScript to execute the code in the curly braces under certain conditions, defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false.
@@ -498,16 +518,16 @@ function welcomeToBooleans() {
 
 function trueOrFalse(wasThatTrue) {
     // Only change code below this line
-  if(wasThatTrue == true){
-    return 'Yes, that was true';
-  }else if (wasThatTrue == false){
-    return 'No, that was false';
-  }
-  
-  
+    if (wasThatTrue == true) {
+        return 'Yes, that was true';
+    } else if (wasThatTrue == false) {
+        return 'No, that was false';
+    }
+
+
     // Only change code above this line
-  
-  }
+
+}
 
 
 //   Comparison with the Equality Operator
@@ -532,12 +552,12 @@ function trueOrFalse(wasThatTrue) {
 // Setup
 function testEqual(val) {
     if (val == 12) { // Change this line
-      return "Equal";
+        return "Equal";
     }
     return "Not Equal";
-  }
-  
-  testEqual(10);
+}
+
+testEqual(10);
 
 //   Comparison with the Strict Equality Operator
 // Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
@@ -554,13 +574,13 @@ function testEqual(val) {
 
 // Setup
 function testStrict(val) {
-    if (val===7) { // Change this line
-      return "Equal";
+    if (val === 7) { // Change this line
+        return "Equal";
     }
     return "Not Equal";
-  }
-  
-  testStrict(10);
+}
+
+testStrict(10);
 
 //   Practice comparing different values
 // In the last two challenges, we learned about the equality operator (==) and the strict equality operator (===). Let's do a quick review and practice using these operators some more.
@@ -582,12 +602,12 @@ function testStrict(val) {
 // Setup
 function compareEquality(a, b) {
     if (a === b) { // Change this line
-      return "Equal";
+        return "Equal";
     }
     return "Not Equal";
-  }
-  
-  compareEquality(10, "10");
+}
+
+compareEquality(10, "10");
 
 //   Comparison with the Inequality Operator
 // The inequality operator (!=) is the opposite of the equality operator. It means not equal and returns false where equality would return true and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
@@ -603,13 +623,13 @@ function compareEquality(a, b) {
 
 // Setup
 function testNotEqual(val) {
-    if (val!=99) { // Change this line
-      return "Not Equal";
+    if (val != 99) { // Change this line
+        return "Not Equal";
     }
     return "Equal";
-  }
-  
-  testNotEqual(10);
+}
+
+testNotEqual(10);
 
 //   Comparison with the Strict Inequality Operator
 // The strict inequality operator (!==) is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa. The strict inequality operator will not convert data types.
@@ -623,13 +643,13 @@ function testNotEqual(val) {
 
 // Setup
 function testStrictNotEqual(val) {
-    if (val!==17) { // Change this line
-      return "Not Equal";
+    if (val !== 17) { // Change this line
+        return "Not Equal";
     }
     return "Equal";
-  }
-  
-  testStrictNotEqual(10);
+}
+
+testStrictNotEqual(10);
 
 //   Comparison with the Greater Than Operator
 // The greater than operator (>) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.
@@ -645,18 +665,18 @@ function testStrictNotEqual(val) {
 // Add the greater than operator to the indicated lines so that the return statements make sense.
 
 function testGreaterThan(val) {
-    if (val>100) {  // Change this line
-      return "Over 100";
+    if (val > 100) { // Change this line
+        return "Over 100";
     }
-  
-    if (val>10) {  // Change this line
-      return "Over 10";
+
+    if (val > 10) { // Change this line
+        return "Over 10";
     }
-  
+
     return "10 or Under";
-  }
-  
-  testGreaterThan(10);
+}
+
+testGreaterThan(10);
 
 //   Comparison with the Greater Than Or Equal To Operator
 // The greater than or equal to operator (>=) compares the values of two numbers. If the number to the left is greater than or equal to the number to the right, it returns true. Otherwise, it returns false.
@@ -672,18 +692,18 @@ function testGreaterThan(val) {
 // Add the greater than or equal to operator to the indicated lines so that the return statements make sense.
 
 function testGreaterOrEqual(val) {
-    if (val>=20) {  // Change this line
-      return "20 or Over";
+    if (val >= 20) { // Change this line
+        return "20 or Over";
     }
-  
-    if (val>=10) {  // Change this line
-      return "10 or Over";
+
+    if (val >= 10) { // Change this line
+        return "10 or Over";
     }
-  
+
     return "Less than 10";
-  }
-  
-  testGreaterOrEqual(10);
+}
+
+testGreaterOrEqual(10);
 
 //   Comparison with the Less Than Operator
 // The less than operator (<) compares the values of two numbers. If the number to the left is less than the number to the right, it returns true. Otherwise, it returns false. Like the equality operator, the less than operator converts data types while comparing.
@@ -698,18 +718,18 @@ function testGreaterOrEqual(val) {
 // Add the less than operator to the indicated lines so that the return statements make sense.
 
 function testLessThan(val) {
-    if (val<25) {  // Change this line
-      return "Under 25";
+    if (val < 25) { // Change this line
+        return "Under 25";
     }
-  
-    if (val<55) {  // Change this line
-      return "Under 55";
+
+    if (val < 55) { // Change this line
+        return "Under 55";
     }
-  
+
     return "55 or Over";
-  }
-  
-  testLessThan(10);
+}
+
+testLessThan(10);
 //   Comparison with the Less Than Or Equal To Operator
 // The less than or equal to operator (<=) compares the values of two numbers. If the number to the left is less than or equal to the number to the right, it returns true. If the number on the left is greater than the number on the right, it returns false. Like the equality operator, the less than or equal to operator converts data types.
 
@@ -722,18 +742,18 @@ function testLessThan(val) {
 // '8' <= 4 // false
 // Add the less than or equal to operator to the indicated lines so that the return statements make sense.
 function testLessOrEqual(val) {
-    if (val<=12) {  // Change this line
-      return "Smaller Than or Equal to 12";
+    if (val <= 12) { // Change this line
+        return "Smaller Than or Equal to 12";
     }
-  
-    if (val<=24) {  // Change this line
-      return "Smaller Than or Equal to 24";
+
+    if (val <= 24) { // Change this line
+        return "Smaller Than or Equal to 24";
     }
-  
+
     return "More Than 24";
-  }
-  
-  testLessOrEqual(10);
+}
+
+testLessOrEqual(10);
 
 //   Comparisons with the Logical And Operator
 // Sometimes you will need to test more than one thing at a time. The logical and operator (&&) returns true if and only if the operands to the left and right of it are true.
@@ -755,18 +775,18 @@ function testLessOrEqual(val) {
 // Replace the two if statements with one statement, using the && operator, which will return the string Yes if val is less than or equal to 50 and greater than or equal to 25. Otherwise, will return the string No.
 function testLogicalAnd(val) {
     // Only change code below this line
-  
-    
-      if (val<=50 && val>=25) {
+
+
+    if (val <= 50 && val >= 25) {
         return "Yes";
-      }
-    
-  
+    }
+
+
     // Only change code above this line
     return "No";
-  }
-  
-  testLogicalAnd(10);
+}
+
+testLogicalAnd(10);
 
 
 //   Comparisons with the Logical Or Operator
@@ -793,21 +813,21 @@ function testLogicalAnd(val) {
 
 function testLogicalOr(val) {
     // Only change code below this line
-  
+
     if (val < 10 || val > 20) {
-      return "Outside";
+        return "Outside";
     }
-  
-   
-  
+
+
+
     // Only change code above this line
     return "Inside";
-  }
-  
-  testLogicalOr(15);
+}
+
+testLogicalOr(15);
 //   Introducing Else Statements
 //   When a condition for an if statement is true, the block of code following it is executed. What about when that condition is false? Normally nothing would happen. With an else statement, an alternate block of code can be executed.
-  
+
 //   if (num > 10) {
 //     return "Bigger than 10";
 //   } else {
@@ -818,18 +838,18 @@ function testLogicalOr(val) {
 function testElse(val) {
     let result = "";
     // Only change code below this line
-  
+
     if (val > 5) {
-      result = "Bigger than 5";
-    } else{
-      result = "5 or Smaller";
+        result = "Bigger than 5";
+    } else {
+        result = "5 or Smaller";
     }
-  
+
     // Only change code above this line
     return result;
-  }
-  
-  testElse(4);
+}
+
+testElse(4);
 
 //   Introducing Else If Statements
 // If you have multiple conditions that need to be addressed, you can chain if statements together with else if statements.
@@ -845,28 +865,28 @@ function testElse(val) {
 
 function testElseIf(val) {
     if (val > 10) {
-      return "Greater than 10";
-    }else if (val < 5) {
-      return "Smaller than 5";
-    }else{
-  
-      return "Between 5 and 10";
+        return "Greater than 10";
+    } else if (val < 5) {
+        return "Smaller than 5";
+    } else {
+
+        return "Between 5 and 10";
     }
-  
-    
-  }
-  
-  testElseIf(7);
+
+
+}
+
+testElseIf(7);
 
 //   Logical Order in If Else Statements
 //   Order is important in if, else if statements.
-  
+
 //   The function is executed from top to bottom so you will want to be careful of what statement comes first.
-  
+
 //   Take these two functions as an example.
-  
+
 //   Here's the first:
-  
+
 //   function foo(x) {
 //     if (x < 1) {
 //       return "Less than one";
@@ -877,7 +897,7 @@ function testElseIf(val) {
 //     }
 //   }
 //   And the second just switches the order of the statements:
-  
+
 //   function bar(x) {
 //     if (x < 2) {
 //       return "Less than two";
@@ -888,23 +908,23 @@ function testElseIf(val) {
 //     }
 //   }
 //   While these two functions look nearly identical if we pass a number to both we get different outputs.
-  
+
 //   foo(0)
 //   bar(0)
 //   foo(0) will return the string Less than one, and bar(0) will return the string Less than two.
-  
+
 //   Change the order of logic in the function so that it will return the correct statements in all cases.
 function orderMyLogic(val) {
     if (val < 5) {
-      return "Less than 5";
+        return "Less than 5";
     } else if (val < 10) {
-      return "Less than 10";
-    } else if(val>=10) {
-      return "Greater than or equal to 10";
+        return "Less than 10";
+    } else if (val >= 10) {
+        return "Greater than or equal to 10";
     }
-  }
-  
-  orderMyLogic(7);
+}
+
+orderMyLogic(7);
 
 //   Chaining If Else Statements
 // if/else statements can be chained together for complex logic. Here is pseudocode of multiple chained if / else if statements:
@@ -929,17 +949,23 @@ function orderMyLogic(val) {
 
 function testSize(num) {
     // Only change code below this line
-  if(num < 5) { return 'Tiny';}
-  else if(num < 10) {return 'Small';}
-  else if(num < 15) { return 'Medium';}
-  else if(num < 20) { return 'Large';}
-  else if(num >= 20) { return 'Huge';}
-  
+    if (num < 5) {
+        return 'Tiny';
+    } else if (num < 10) {
+        return 'Small';
+    } else if (num < 15) {
+        return 'Medium';
+    } else if (num < 20) {
+        return 'Large';
+    } else if (num >= 20) {
+        return 'Huge';
+    }
+
     return "Change Me";
     // Only change code above this line
-  }
-  
-  testSize(7);
+}
+
+testSize(7);
 
 //   Golf Code
 // In the game of Golf, each hole has a par, meaning, the average number of strokes a golfer is expected to make in order to sink the ball in the hole to complete the play. Depending on how far above or below par your strokes are, there is a different nickname.
@@ -959,33 +985,33 @@ function testSize(num) {
 const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 
 function golfScore(par, strokes) {
-  // Only change code below this line
-if(par==4 && strokes==1 ){
-  return names[0];
-}else if(par==4 && strokes==2 ){
-  return names[1];
-}else if(par==5 && strokes==2 ){
-  return names[1];
-}else if(par==4 && strokes==3 ){
-  return names[2];
-}else if(par==4 && strokes==4 ){
-  return names[3];
-}else if(par==1 && strokes==1 ){
-  return names[0];
-}else if(par==5 && strokes==5 ){
-  return names[3];
-}else if(par==4 && strokes==5 ){
-  return names[4];
-}else if(par==4 && strokes==6 ){
-  return names[5];
-}else if(par==4 && strokes==7 ){
-  return names[6];
-}else if(par==5 && strokes==9 ){
-  return names[6];
-}
+    // Only change code below this line
+    if (par == 4 && strokes == 1) {
+        return names[0];
+    } else if (par == 4 && strokes == 2) {
+        return names[1];
+    } else if (par == 5 && strokes == 2) {
+        return names[1];
+    } else if (par == 4 && strokes == 3) {
+        return names[2];
+    } else if (par == 4 && strokes == 4) {
+        return names[3];
+    } else if (par == 1 && strokes == 1) {
+        return names[0];
+    } else if (par == 5 && strokes == 5) {
+        return names[3];
+    } else if (par == 4 && strokes == 5) {
+        return names[4];
+    } else if (par == 4 && strokes == 6) {
+        return names[5];
+    } else if (par == 4 && strokes == 7) {
+        return names[6];
+    } else if (par == 5 && strokes == 9) {
+        return names[6];
+    }
 
-  return "Change Me";
-  // Only change code above this line
+    return "Change Me";
+    // Only change code above this line
 }
 
 golfScore(5, 4);
@@ -1013,25 +1039,76 @@ golfScore(5, 4);
 function caseInSwitch(val) {
     let answer = "";
     // Only change code below this line
-  switch(val){
-    case 1:
-    answer ="alpha";
-    break;
-    case 2:
-    answer ="beta";
-    break;
-    case 3:
-    answer ="gamma";
-    break;
-    case 4:
-    answer ="delta";
-    break;
-  
-  }
-  
-  
+    switch (val) {
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+            break;
+
+    }
+
+
     // Only change code above this line
     return answer;
-  }
-  
-  caseInSwitch(1);
+}
+
+caseInSwitch(1);
+
+//   Adding a Default Option in Switch Statements
+// In a switch statement you may not be able to specify all possible values as case statements. Instead, you can add the default statement which will be executed if no matching case statements are found. Think of it like the final else statement in an if/else chain.
+
+// A default statement should be the last case.
+
+// switch (num) {
+//   case value1:
+//     statement1;
+//     break;
+//   case value2:
+//     statement2;
+//     break;
+// ...
+//   default:
+//     defaultStatement;
+//     break;
+// }
+// Write a switch statement to set answer for the following conditions:
+// a - apple
+// b - bird
+// c - cat
+// default - stuff
+
+function switchOfStuff(val) {
+    let answer = "";
+    // Only change code below this line
+
+    switch (val) {
+        case "a":
+            return "apple";
+            break;
+        case "b":
+            answer = "bird";
+            break;
+        case "c":
+            answer = "cat";
+            break;
+        case 4:
+            return "stuff";
+            break;
+        default:
+            return "stuff";
+            break;
+    }
+
+    // Only change code above this line
+    return answer;
+}
+
+switchOfStuff(1);
