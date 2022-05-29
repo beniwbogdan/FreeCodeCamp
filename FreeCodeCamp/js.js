@@ -413,3 +413,43 @@ addFive();
 // will call the sum function, which returns a value of 17 and assigns it to the ourSum variable.
 
 // Call the processArg function with an argument of 7 and assign its return value to the variable processed.
+
+// Setup
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+// Only change code below this line
+processed = processArg(7);
+
+// Stand in Line
+// In Computer Science a queue is an abstract Data Structure where items are kept in order. New items can be added at the back of the queue and old items are taken off from the front of the queue.
+
+// Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+
+// Add the number to the end of the array, then remove the first element of the array.
+
+// The nextInLine function should then return the element that was removed.
+
+
+function nextInLine(arr, item) {
+    // Only change code below this line
+     var queue = arr.push(item);
+  
+    var removeItem = arr.shift();
+    
+    return removeItem;
+    // Only change code above this line
+  }
+  
+  
+  
+  // Setup
+  const testArr = [1, 2, 3, 4, 5];
+  
+  // Display code
+  console.log("Before: " + JSON.stringify(testArr));
+  console.log(nextInLine(testArr, 6));
+  console.log("After: " + JSON.stringify(testArr));
