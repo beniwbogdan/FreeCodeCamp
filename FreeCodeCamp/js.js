@@ -1136,33 +1136,33 @@ switchOfStuff(1);
 function sequentialSizes(val) {
     let answer = "";
     // Only change code below this line
-  
-  let result = "";
-  switch (val) {
-    case 1:
-    case 2:
-    case 3:
-      answer = "Low";
-      break;
-    case 4:
-    case 5:
-    case 6:
-    answer = "Mid";
-      break;
-    case 7:
-    case 8:
-    case 9:
-      answer = "High";
-  }
-  
+
+    let result = "";
+    switch (val) {
+        case 1:
+        case 2:
+        case 3:
+            answer = "Low";
+            break;
+        case 4:
+        case 5:
+        case 6:
+            answer = "Mid";
+            break;
+        case 7:
+        case 8:
+        case 9:
+            answer = "High";
+    }
+
     // Only change code above this line
     return answer;
-  }
-  
-  sequentialSizes(1);
+}
+
+sequentialSizes(1);
 //   Replacing If Else Chains with Switch
 //   If you have many options to choose from, a switch statement can be easier to write than many chained if/else if statements. The following:
-  
+
 //   if (val === 1) {
 //     answer = "a";
 //   } else if (val === 2) {
@@ -1171,7 +1171,7 @@ function sequentialSizes(val) {
 //     answer = "c";
 //   }
 //   can be replaced with:
-  
+
 //   switch (val) {
 //     case 1:
 //       answer = "a";
@@ -1187,32 +1187,32 @@ function sequentialSizes(val) {
 function chainToSwitch(val) {
     let answer = "";
     // Only change code below this line
-  
-  
-  switch(val){
-  case "bob":
-      answer = "Marley";
-      break;
-  case 42:
-      answer = "The Answer";
-      break;
-  case 1:
-     answer = "There is no #1";
-      break;
-  case 99:
-      answer = "Missed me by this much!";
-      break;
-  case 7:
-      answer = "Ate Nine";
-      break;
-  }
-  
-  
+
+
+    switch (val) {
+        case "bob":
+            answer = "Marley";
+            break;
+        case 42:
+            answer = "The Answer";
+            break;
+        case 1:
+            answer = "There is no #1";
+            break;
+        case 99:
+            answer = "Missed me by this much!";
+            break;
+        case 7:
+            answer = "Ate Nine";
+            break;
+    }
+
+
     // Only change code above this line
     return answer;
-  }
-  
-  chainToSwitch(7);
+}
+
+chainToSwitch(7);
 
 //   Returning Boolean Values from Functions
 // You may recall from Comparison with the Equality Operator that all comparison operators return a boolean true or false value.
@@ -1236,11 +1236,11 @@ function chainToSwitch(val) {
 function isLess(a, b) {
     // Only change code below this line
     return a < b;
-    
+
     // Only change code above this line
-  }
-  
-  isLess(10, 15);
+}
+
+isLess(10, 15);
 
 //   Return Early Pattern for Functions
 // When a return statement is reached, the execution of the current function stops and control returns to the calling location.
@@ -1263,17 +1263,17 @@ function isLess(a, b) {
 // Setup
 function abTest(a, b) {
     // Only change code below this line
-  
-  if(a<0 || b<0){
-    return undefined;
-  }
-  
+
+    if (a < 0 || b < 0) {
+        return undefined;
+    }
+
     // Only change code above this line
-  
+
     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
-  }
-  
-  abTest(2,2);
+}
+
+abTest(2, 2);
 
 //   Build JavaScript Objects
 // You may have heard the term object before.
@@ -1304,13 +1304,13 @@ function abTest(a, b) {
 // You can set these object properties to whatever values you want, as long as name is a string, legs and tails are numbers, and friends is an array.
 const myDog = {
     // Only change code below this line
-  
-  name:"",
-  legs:4,
-  tails:1,
-  friends:["Jesse Pinkman", "Walter White"],
+
+    name: "",
+    legs: 4,
+    tails: 1,
+    friends: ["Jesse Pinkman", "Walter White"],
     // Only change code above this line
-  };
+};
 
 //   Accessing Object Properties with Dot Notation
 // There are two ways to access the properties of an object: dot notation (.) and bracket notation ([]), similar to an array.
@@ -1334,11 +1334,11 @@ const testObj = {
     "hat": "ballcap",
     "shirt": "jersey",
     "shoes": "cleats"
-  };
-  
-  // Only change code below this line
-  const hatValue = testObj.hat;      // Change this line
-  const shirtValue = testObj.shirt;    // Change this line
+};
+
+// Only change code below this line
+const hatValue = testObj.hat; // Change this line
+const shirtValue = testObj.shirt; // Change this line
 
 //   Accessing Object Properties with Bracket Notation
 // The second way to access the properties of an object is bracket notation ([]). If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
@@ -1367,11 +1367,11 @@ const testObj = {
     "an entree": "hamburger",
     "my side": "veggies",
     "the drink": "water"
-  };
-  
-  // Only change code below this line
-  const entreeValue = testObj["an entree"];   // Change this line
-  const drinkValue = testObj["the drink"];    // Change this line
+};
+
+// Only change code below this line
+const entreeValue = testObj["an entree"]; // Change this line
+const drinkValue = testObj["the drink"]; // Change this line
 
 //   Accessing Object Properties with Variables
 // Another use of bracket notation on objects is to access a property which is stored as the value of a variable. This can be very useful for iterating through an object's properties or when accessing a lookup table.
@@ -1413,11 +1413,11 @@ const testObj = {
     12: "Namath",
     16: "Montana",
     19: "Unitas"
-  };
-  
-  // Only change code below this line
-  const playerNumber = 16;  // Change this line
-  const player = testObj[playerNumber];   // Change this line
+};
+
+// Only change code below this line
+const playerNumber = 16; // Change this line
+const player = testObj[playerNumber]; // Change this line
 
 //   Updating Object Properties
 // After you've created a JavaScript object, you can update its properties at any time just like you would update any other variable. You can use either dot or bracket notation to update.
@@ -1440,9 +1440,9 @@ const myDog = {
     "legs": 4,
     "tails": 1,
     "friends": ["freeCodeCamp Campers"]
-  };
-  myDog.name = "Happy Coder;"
-  // Only change code below this line
+};
+myDog.name = "Happy Coder;"
+// Only change code below this line
 //   Add New Properties to a JavaScript Object
 // You can add new properties to existing JavaScript objects the same way you would modify them.
 
@@ -1471,9 +1471,9 @@ const myDog = {
     "legs": 4,
     "tails": 1,
     "friends": ["freeCodeCamp Campers"]
-  };
-  
-  myDog.bark="woof";
+};
+
+myDog.bark = "woof";
 
 
 //   Delete Properties from a JavaScript Object
@@ -1508,10 +1508,10 @@ const myDog = {
     "tails": 1,
     "friends": ["freeCodeCamp Campers"],
     "bark": "woof"
-  };
-  
-  // Only change code below this line
-  delete myDog.tails;
+};
+
+// Only change code below this line
+delete myDog.tails;
 //   Using Objects for Lookups
 // Objects can be thought of as a key/value storage, like a dictionary. If you have tabular data, you can use an object to lookup values rather than a switch statement or an if/else chain. This is most useful when you know that your input data is limited to a certain range.
 
@@ -1540,22 +1540,22 @@ const myDog = {
 // Setup
 function phoneticLookup(val) {
     let result = "";
-  
+
     // Only change code below this line
-   const lookup= {
-      "alpha":"Adams",
-      "bravo":"Boston",
-      "charlie":"Chicago",  
-      "delta":"Denver",
-      "echo":"Easy",
-      "foxtrot":"Frank",
+    const lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank",
     }
-  result = lookup[val]
+    result = lookup[val]
     // Only change code above this line
     return result;
-  }
-  
-  phoneticLookup("charlie");
+}
+
+phoneticLookup("charlie");
 
 //   Testing Objects for Properties
 // Sometimes it is useful to check if the property of a given object exists or not. We can use the .hasOwnProperty(propname) method of objects to determine if that object has the given property name. .hasOwnProperty() returns true or false if the property is found or not.
@@ -1575,14 +1575,61 @@ function phoneticLookup(val) {
 
 function checkObj(obj, checkProp) {
     // Only change code below this line
-  
-    if(obj.hasOwnProperty(checkProp)==true){
-      return obj[checkProp];
-    }else{
-      return "Not Found";
+
+    if (obj.hasOwnProperty(checkProp) == true) {
+        return obj[checkProp];
+    } else {
+        return "Not Found";
     }
-    
-  
-  
+
+
+
     // Only change code above this line
-  }
+}
+
+
+//   Manipulating Complex Objects
+// Sometimes you may want to store data in a flexible Data Structure. A JavaScript object is one way to handle flexible data. They allow for arbitrary combinations of strings, numbers, booleans, arrays, functions, and objects.
+// Here's an example of a complex data structure:
+
+// const ourMusic = [
+//   {
+//     "artist": "Daft Punk",
+//     "title": "Homework",
+//     "release_year": 1997,
+//     "formats": [ 
+//       "CD", 
+//       "Cassette", 
+//       "LP"
+//     ],
+//     "gold": true
+//   }
+// ];
+// This is an array which contains one object inside. The object has various pieces of metadata about an album. It also has a nested formats array. If you want to add more album records, you can do this by adding records to the top level array. Objects hold data in a property, which has a key-value format. In the example above, "artist": "Daft Punk" is a property that has a key of artist and a value of Daft Punk.
+
+// Note: You will need to place a comma after every object in the array, unless it is the last object in the array.
+// Add a new album to the myMusic array. Add artist and title strings, release_year number, and a formats array of strings.
+
+const myMusic = [{
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1973,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ],
+        "gold": true,
+
+    },
+    {
+        "artist": "Billy Joel",
+        "title": "Piano Man",
+        "release_year": 1933,
+        "formats": [
+            "CD",
+            "8T",
+            "LP"
+        ]
+    }
+];
